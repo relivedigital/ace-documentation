@@ -23,9 +23,9 @@
 
                     {{- block "main" . }}{{- end }}
                     
-                    <div class="row">
+                    <div class="row h-auto">
                         {{- if and (ne .Site.Params.disableReadmoreNav true) (ne .Params.disableReadmoreNav true) -}}
-                        <div class="position-relative mx-auto col-lg-9">
+                        <div class="position-relative mx-0 p-0 col-lg-12">
                           {{ partial "next-prev-page.html" . }}
                         </div>
                         {{- end -}}
